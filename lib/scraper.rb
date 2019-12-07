@@ -39,7 +39,12 @@ class Scraper
       else
         student[:blog] = link
       end
-      
+    end
+     student[:profile_quote] = doc.css("div.profile-quote").text
+    student[:bio] = doc.css("div.bio-content.content-holder").css("div.description-holder p").text
+
+    student
+  end
       
 end
 
