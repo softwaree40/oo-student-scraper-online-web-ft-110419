@@ -23,7 +23,7 @@ class Scraper
       social_link = Nokogiri::HTML(open(profile_url))
       pages_profile = social_link.css("div.social-icon-container")
       collected_link = pages_profile.collect do |link|
-      link.attribute("href").text
+      link.attribute("href")
       
      end
      binding.pry
