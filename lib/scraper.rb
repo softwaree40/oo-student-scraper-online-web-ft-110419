@@ -26,7 +26,7 @@ class Scraper
       link.attribute("href")
       
      end
-     binding.pry
+     #binding.pry
   end
      student = {}
      collected_link.each do |link|
