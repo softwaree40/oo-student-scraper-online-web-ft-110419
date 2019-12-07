@@ -28,6 +28,7 @@ class Scraper
      end
      binding.pry
   end
+     student = {}
      collected_link.each do |link|
       if link.include?("twitter")
         student[:twitter] = link
@@ -38,5 +39,7 @@ class Scraper
       else
         student[:blog] = link
       end
+      
+      
 end
 
