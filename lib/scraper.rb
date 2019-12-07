@@ -8,8 +8,9 @@ class Scraper
      pages = page.css("div.student-card")
       page.css("div.student-card").each |student|
      
-     binding.pry
+     
       end
+      binding.pry
   end
 
   def self.scrape_profile_page(profile_url)
