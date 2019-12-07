@@ -2,7 +2,7 @@ require 'open-uri'
 require 'pry'
 
 class Scraper
-       students = []
+  students = []
   def self.scrape_index_page(index_url)
      page = Nokogiri::HTML(open(index_url))
      pages = page.css("div.student-card")
