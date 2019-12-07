@@ -5,8 +5,11 @@ class Scraper
 
   def self.scrape_index_page(index_url)
      page = Nokogiri::HTML(open(index_url))
-     pages = page.css("div.student-card").text
+     pages = page.css("div.student-card")
+     page.css("div.student-card").each |student|
+     
      binding.pry
+     end
   end
 
   def self.scrape_profile_page(profile_url)
