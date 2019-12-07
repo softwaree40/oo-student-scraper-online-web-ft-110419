@@ -24,6 +24,7 @@ class Scraper
       pages_profile = social_link.css("div.social-icon-container")
       pages_profile.collect do |link|
       binding.pry
+     end
   end
   
 end
