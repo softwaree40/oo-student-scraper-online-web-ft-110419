@@ -8,7 +8,7 @@ class Scraper
      pages = page.css("div.student-card")
      students = []
 
-    doc.css("div.student-card").each do |student|
+    pages.css("div.student-card").each do |student|
       students << {
         name: student.css("div.card-text-container").css("h4.student-name").text.strip,
         location: student.css("div.card-text-container").css("p.student-location").text.strip,
