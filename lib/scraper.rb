@@ -12,9 +12,9 @@ class Scraper
       name: student.css("div.card-text-container h4.student-name"),
       location: student.css("div.card-text-container p.student-location"),
       profile_url: student.css("a").attribute("href").value
-      
+      binding.pry
       }
-       binding.pry
+       
      
       end
       students
