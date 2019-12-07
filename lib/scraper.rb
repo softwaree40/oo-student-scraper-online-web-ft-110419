@@ -10,7 +10,7 @@ class Scraper
       students << {
       name: student.css("div.card-text-container h4.student-name")
       location: student.css("div.card-text-container p.student-location")
-      profile_url: student.css("("a").attribute.("href").value")
+      profile_url: student.css("a").attribute.("href").value
       }
        binding.pry
      
