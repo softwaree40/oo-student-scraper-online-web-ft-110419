@@ -28,6 +28,15 @@ class Scraper
      end
      binding.pry
   end
-  
+     collected_link.each do |link|
+      if link.include?("twitter")
+        student[:twitter] = link
+      elsif link.include?("github")
+        student[:github] = link
+      elsif link.include?("linkedin")
+        student[:linkedin] = link
+      else
+        student[:blog] = link
+      end
 end
 
